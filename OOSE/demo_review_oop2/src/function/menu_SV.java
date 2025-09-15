@@ -8,7 +8,7 @@ public class menu_SV {
             System.out.println("2. Sửa thông tin sinh viên");
             System.out.println("3. Xóa sinh viên");
             System.out.println("4. Hiển thị danh sách sinh viên");
-            System.out.println("5. Tìm kiếm sinh viên");
+            System.out.println("5. Nhập danh sách sinh viên từ file");
             // System.out.println("0. Quay lại");
             System.out.println("6. Thoát");
             System.out.println("Chọn chức năng: ");
@@ -31,9 +31,15 @@ public class menu_SV {
                     break;
                 case 4:
                     // hiển thị danh sách sinh viên
+                    try {
+                        list_SV lister = new list_SV();
+                        lister.listSinhVien_menu();
+                    } catch (Exception e) {
+                        System.out.println("Đã xảy ra lỗi khi gọi danh sách sinh vien: " + e.getMessage());
+                    }
                     break;
                 case 5:
-                    // tìm kiếm sinh viên
+                    // nhập danh sách sinh viên từ file
                     break;
                 case 6:
                     System.out.println("Thoát chương trình");
