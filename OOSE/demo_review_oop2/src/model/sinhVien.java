@@ -1,3 +1,4 @@
+package model;
 
 import java.util.Date;
 
@@ -13,6 +14,23 @@ public class sinhVien extends person {
         this.nganhDaoTao = nganhDaoTao;
         this.diemTB = diemTB;
         this.lopSinhHoat = lopSinhHoat;
+    }
+
+
+    // public getMaSV() {
+    //     return maSV;
+    // }
+
+    public String getNganhDaoTao() {
+        return nganhDaoTao;
+    }
+
+    public Double getDiemTB() {
+        return diemTB;
+    }
+
+    public String getLopSinhHoat() {
+        return lopSinhHoat;
     }
 
 
